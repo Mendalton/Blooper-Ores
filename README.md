@@ -1,4 +1,4 @@
-#About the Mod
+# About the Mod
 
 Minecraft version: 1.17
 
@@ -6,7 +6,7 @@ Java version: 16
 
 Mod Loader: Fabric
 
-##Notes:
+## Notes:
 
 There will be no plans on porting this to forge.
 
