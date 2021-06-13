@@ -1,2 +1,13 @@
-# Blooper-Ores
-This is kinda the first mod that I would be working on. Basically adds new wacky ores, new armor, and possibly even some new features.
+#About the Mod
+
+Minecraft version: 1.17
+
+Java version: 16
+
+Mod Loader: Fabric
+
+##Notes:
+
+There will be no plans on porting this to forge.
+
+There will also be no plans for porting this into previous Minecraft versions(at the moment).
