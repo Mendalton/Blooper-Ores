@@ -31,8 +31,3 @@
 # fabric
 
 /run
-.gradle/checksums/md5-checksums.bin
-.gradle/checksums/sha1-checksums.bin
-.idea/gradle.xml
-.idea/misc.xml
-.idea/workspace.xml
