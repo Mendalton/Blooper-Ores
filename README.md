@@ -11,3 +11,5 @@ Mod Loader: Fabric
 There will be no plans on porting this to forge.
 
 There will also be no plans for porting this into previous Minecraft versions(at the moment).
+
+This project is also a work in progress.
