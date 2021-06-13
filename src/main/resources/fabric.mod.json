@@ -1,0 +1,37 @@
+{
+  "schemaVersion": 1,
+  "id": "blooperOres",
+  "version": "${version}",
+
+  "name": "Blooper Ores",
+  "description": "This mod adds new ores, new armour, and possibly some new features",
+  "authors": [
+    "Mendalton"
+  ],
+  "contact": {
+    "homepage": "",
+    "sources": "https://github.com/Mendalton/Blooper-Ores"
+  },
+
+  "license": "CC0-1.0",
+  "icon": "assets/blooperOres/icon.png",
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "net.BlooperOres.main"
+    ]
+  },
+  "mixins": [
+  ],
+
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric": "*",
+    "minecraft": "1.17.x",
+    "java": ">=16"
+  },
+  "suggests": {
+    "another-mod": "*"
+  }
+}
