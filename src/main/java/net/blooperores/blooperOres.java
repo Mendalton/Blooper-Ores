@@ -1,5 +1,6 @@
 package net.blooperores;
 
+import net.blooperores.block.ores.overworldOres;
 import net.fabricmc.api.ModInitializer;
 import net.minecraft.item.Item;
 import net.minecraft.item.ItemGroup;
@@ -14,5 +15,6 @@ public class blooperOres implements ModInitializer {
     @Override
     public void onInitialize(){
         Registry.register(Registry.ITEM, new Identifier(MODID, "blooper_item"), BLOOPER_ITEM);
+        overworldOres.init();
     }
 }
