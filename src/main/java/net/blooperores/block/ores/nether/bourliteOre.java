@@ -1,4 +1,4 @@
-package net.blooperores.block.ores.overworld;
+package net.blooperores.block.ores.nether;
 
 import net.minecraft.block.Block;
 import net.minecraft.client.item.TooltipContext;
@@ -10,14 +10,13 @@ import net.minecraft.world.BlockView;
 
 import java.util.List;
 
-public class derpyOre extends Block {
-    public derpyOre(Settings settings) {
+public class bourliteOre extends Block {
+    public bourliteOre(Settings settings) {
         super(settings);
     }
 
     @Override
     public void appendTooltip(ItemStack stack, BlockView world, List<Text> tooltip, TooltipContext options) {
-        tooltip.add(new TranslatableText("block.blooperores.derpy_ore.tooltip.line_1").formatted(Formatting.GREEN));
-        tooltip.add(new TranslatableText("block.blooperores.derpy_ore.tooltip.line_2").formatted(Formatting.GREEN));
+        tooltip.add(new TranslatableText("block.blooperores.bourlite_ore.tooltip").formatted(Formatting.RED));
     }
 }

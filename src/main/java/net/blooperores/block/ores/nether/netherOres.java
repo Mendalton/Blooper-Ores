@@ -1,5 +1,4 @@
-package net.blooperores.block.ores.overworld;
-
+package net.blooperores.block.ores.nether;
 
 import net.fabricmc.fabric.api.biome.v1.BiomeModifications;
 import net.fabricmc.fabric.api.biome.v1.BiomeSelectors;
@@ -22,30 +21,22 @@ import net.minecraft.world.gen.feature.Feature;
 import net.minecraft.world.gen.feature.OreFeatureConfig;
 import net.minecraft.world.gen.heightprovider.UniformHeightProvider;
 
+public class netherOres {
 
+    public static final Block BOURLITE_ORE = new bourliteOre(FabricBlockSettings.of(Material.STONE).strength(4.8f, 30.2f));
 
-public class overworldOres {
-
-    public static final Block DERPY_ORE = new derpyOre(FabricBlockSettings.of(Material.STONE).strength(5.0f, 60.f));
-
-    private static ConfiguredFeature<?, ?> DERPY_ORE_OVERWORLD = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_OVERWORLD, DERPY_ORE.getDefaultState(), 4))
+    private static ConfiguredFeature<?, ?> BOURLITE_ORE_NETHER = Feature.ORE.configure(new OreFeatureConfig(OreFeatureConfig.Rules.BASE_STONE_NETHER, BOURLITE_ORE.getDefaultState(), 5))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(50), YOffset.fixed(64)))))
             .spreadHorizontally()
             .repeat(6);
 
-
     public static void init(){
 
-        //Register Derpy Ore
-        Registry.register(Registry.BLOCK, new Identifier("blooperores", "derpy_ore"), DERPY_ORE);
-        Registry.register(Registry.ITEM, new Identifier("blooperores", "derpy_ore"), new BlockItem(DERPY_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
+        Registry.register(Registry.BLOCK, new Identifier("blooperores", "bourlite_ore"), BOURLITE_ORE);
+        Registry.register(Registry.ITEM, new Identifier("blooperores", "bourlite_ore"), new BlockItem(BOURLITE_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
-        //Register custom world generation for Derpy Ore.
-        RegistryKey<ConfiguredFeature<?, ?>> derpyOreOverworld = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("blooperores", "derpy_ore"));
-        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, derpyOreOverworld.getValue(), DERPY_ORE_OVERWORLD);
-        BiomeModifications.addFeature(BiomeSelectors.foundInOverworld(), GenerationStep.Feature.UNDERGROUND_ORES, derpyOreOverworld);
-
+        RegistryKey<ConfiguredFeature<?, ?>> bourliteOreNether = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("blooperores", "bourlite_ore"));
+        Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, bourliteOreNether.getValue(), BOURLITE_ORE_NETHER);
+        BiomeModifications.addFeature(BiomeSelectors.foundInTheNether(), GenerationStep.Feature.UNDERGROUND_ORES, bourliteOreNether);
     }
-
-
 }

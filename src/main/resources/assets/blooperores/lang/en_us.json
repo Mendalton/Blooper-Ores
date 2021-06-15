@@ -1,8 +1,17 @@
 {
+  "_comment1": "Blocks",
   "block.blooperores.derpy_ore":"Derpy Ore",
+  "block.blooperores.galactic_ore": "Galactic Ore",
+  "block.blooperores.bourlite_ore": "Bourlite Ore",
+
+  "_comment2": "Items",
   "item.blooperores.blooper_item": "Blooper Item",
 
-  "_comment": "Tooltip Text",
-  "block.blooperores.derpy_ore.tooltip": "Not sponsored by CommandGeek :P",
-  "item.blooperores.blooper_item.tooltip": "Success!!!"
+
+  "_comment3": "Tooltip Texts",
+  "block.blooperores.derpy_ore.tooltip.line_1": "Welp, this is unintentionally CG as an ore :P",
+  "block.blooperores.derpy_ore.tooltip.line_2": "lool",
+  "item.blooperores.blooper_item.tooltip": "Success!!!",
+  "block.blooperores.galactic_ore.tooltip.line_1": "Very Galactic.",
+  "block.blooperores.bourlite_ore.tooltip": "An ore that I just made up :O"
 }

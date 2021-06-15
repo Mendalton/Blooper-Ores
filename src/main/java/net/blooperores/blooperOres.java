@@ -1,5 +1,7 @@
 package net.blooperores;
 
+import net.blooperores.block.ores.end.endOres;
+import net.blooperores.block.ores.nether.netherOres;
 import net.blooperores.block.ores.overworld.overworldOres;
 import net.blooperores.item.blooperItem;
 import net.fabricmc.api.ModInitializer;
@@ -16,6 +18,8 @@ public class blooperOres implements ModInitializer {
     public void onInitialize(){
         Registry.register(Registry.ITEM, new Identifier(MODID, "blooper_item"), BLOOPER_ITEM);
         overworldOres.init();
+        endOres.init();
+        netherOres.init();
     }
 
 }
