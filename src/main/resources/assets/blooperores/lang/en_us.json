@@ -1,5 +1,8 @@
 {
-  "block.blooperores.derpy_ore":"Derpy Ore :P",
-  "item.blooperores.blooper_item": "BlooperItem",
-  "block.blooperores.derpy_ore.tooltip": "Not sponsored by CommandGeek :P"
+  "block.blooperores.derpy_ore":"Derpy Ore",
+  "item.blooperores.blooper_item": "Blooper Item",
+
+  "_comment": "Tooltip Text",
+  "block.blooperores.derpy_ore.tooltip": "Not sponsored by CommandGeek :P",
+  "item.blooperores.blooper_item.tooltip": "Success!!!"
 }
