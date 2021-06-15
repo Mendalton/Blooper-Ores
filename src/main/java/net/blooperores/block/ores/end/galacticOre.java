@@ -16,6 +16,7 @@ public class galacticOre extends Block {
     }
 
     @Override
+    public void appendTooltip(ItemStack stack, BlockView world, List<Text> tooltip, TooltipContext options) {
         tooltip.add(new TranslatableText("block.blooperores.galactic_ore.tooltip.line_1").formatted(Formatting.DARK_PURPLE));
     }
 }
