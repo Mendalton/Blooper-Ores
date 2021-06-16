@@ -3,6 +3,7 @@
   "block.blooperores.derpy_ore":"Derpy Ore",
   "block.blooperores.galactic_ore": "Galactic Ore",
   "block.blooperores.bourlite_ore": "Bourlite Ore",
+  "block.blooperores.boiled_rock": "Boiled Rock",
 
   "_comment2": "Items",
   "item.blooperores.blooper_item": "Blooper Item",
@@ -13,5 +14,6 @@
   "block.blooperores.derpy_ore.tooltip.line_2": "lool",
   "item.blooperores.blooper_item.tooltip": "Success!!!",
   "block.blooperores.galactic_ore.tooltip.line_1": "Very Galactic.",
-  "block.blooperores.bourlite_ore.tooltip": "An ore that I just made up :O"
+  "block.blooperores.bourlite_ore.tooltip": "An ore that I just made up :O",
+  "block.blooperores.boiled_rock.tooltip": "Very hot stuff"
 }
