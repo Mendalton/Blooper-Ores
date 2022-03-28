@@ -4,9 +4,11 @@
   "block.blooperores.galactic_ore": "Galactic Ore",
   "block.blooperores.bourlite_ore": "Bourlite Ore",
   "block.blooperores.boiled_rock": "Boiled Rock",
+  "block.blooperores.devilish_ore": "Devilish Ore",
 
   "_comment2": "Items",
   "item.blooperores.blooper_item": "Blooper Item",
+  "item.blooperores.raw_bourlite": "Raw Bourlite",
 
 
   "_comment3": "Tooltip Texts",

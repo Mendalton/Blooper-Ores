@@ -27,17 +27,23 @@ public class endOres {
 
     public static final Block GALACTIC_ORE = new galacticOre(FabricBlockSettings.of(Material.STONE).strength(14.f, 15.f));
 
+
+
     private static ConfiguredFeature<?, ?> GALACTIC_ORE_END = Feature.ORE.configure(new OreFeatureConfig(new BlockMatchRuleTest(Blocks.END_STONE), GALACTIC_ORE.getDefaultState(), 4))
             .decorate(Decorator.RANGE.configure(new RangeDecoratorConfig(UniformHeightProvider.create(YOffset.fixed(10), YOffset.fixed(20)))))
             .spreadHorizontally()
             .repeat(4);
 
+
     public static void init(){
         Registry.register(Registry.BLOCK, new Identifier("blooperores", "galactic_ore"), GALACTIC_ORE);
         Registry.register(Registry.ITEM, new Identifier("blooperores", "galactic_ore"), new BlockItem(GALACTIC_ORE, new FabricItemSettings().group(ItemGroup.BUILDING_BLOCKS)));
 
+
         RegistryKey<ConfiguredFeature<?, ?>> galacticOreEnd = RegistryKey.of(Registry.CONFIGURED_FEATURE_KEY, new Identifier("blooperores", "galactic_ore"));
         Registry.register(BuiltinRegistries.CONFIGURED_FEATURE, galacticOreEnd.getValue(), GALACTIC_ORE_END);
         BiomeModifications.addFeature(BiomeSelectors.foundInTheEnd(), GenerationStep.Feature.UNDERGROUND_ORES, galacticOreEnd);
+
+
     }
 }
